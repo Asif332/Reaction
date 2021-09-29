@@ -14,7 +14,10 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            ReactionView(reactionViewModel: $reactionViewModel)
+            ZStack {
+                Color.yellow.opacity(0.5).edgesIgnoringSafeArea(.all)
+                ReactionView(reactionViewModel: $reactionViewModel)
+            }
             .navigationBarTitle("Reaction", displayMode: .large)
         }
     }

@@ -57,7 +57,7 @@ struct ReactionButtonView: View {
             .overlay(
                 RoundedRectangle(cornerRadius: CGFloat(4))
                     .stroke(lineWidth: 1)
-                    .foregroundColor(.gray.opacity(0.5))
+                    .foregroundColor(.gray)
             )
             .onTapGesture(perform: {
                 reactionViewModel.reacted.toggle()
